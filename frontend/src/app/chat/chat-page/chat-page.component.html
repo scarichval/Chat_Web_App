@@ -1,0 +1,14 @@
+<div #scrollMe class="chat">
+  <div class="chat-logout-button">
+    <button (click)="onLogout()">Quitter</button>
+  </div>
+  <div class="chat-messages">
+
+<!--    // Affichage des messages-->
+    <app-messages [messages]="messages"></app-messages>
+
+<!--    Publication d'un nouveau message-->
+    <app-new-message-form></app-new-message-form>
+
+  </div>
+</div>
